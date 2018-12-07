@@ -15,7 +15,7 @@ export default class WalkieSpeech {
     const speech = new SpeechSynthesisUtterance();
     speech.text = text;
     speech.voiceURI = 'native';
-    speech.speed = 1.5;
+    speech.speed = 2;
     speech.lang = this.lang;
 
     speech.addEventListener('end', () => {

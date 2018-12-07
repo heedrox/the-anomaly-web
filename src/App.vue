@@ -2,7 +2,8 @@
     <section id="app">
         <walkie :answers="this.answers" :speaking-sentence="this.query"
                 :button-start="this.microphoneStart" :button-end="this.microphoneEnd"
-                :is-dron-speaking="this.isDronSpeaking"></walkie>
+                :is-dron-speaking="this.isDronSpeaking"
+                :startGameCallback = "this.startGame"></walkie>
     </section>
 </template>
 
@@ -50,6 +51,9 @@
       })
     },
     methods: {
+      startGame() {
+        this.dronSay('Jugar a la anomalía');
+      },
       showMessage(text) {
         this.query = text;
       },

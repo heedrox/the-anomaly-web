@@ -27,7 +27,7 @@
       WalkieScreen,
       WalkieButton,
     },
-    props: ['answers', 'speakingSentence', 'buttonStart', 'buttonEnd', 'isDronSpeaking'],
+    props: ['answers', 'speakingSentence', 'buttonStart', 'buttonEnd', 'isDronSpeaking', 'startGameCallback'],
     data: function () {
       return {
         chatWidth: 100,
@@ -65,6 +65,7 @@
       startWalkie() {
         this.started = true;
         document.getElementById('walkieAudio').play();
+        this.startGameCallback();
       },
       positionElements() {
         const walkie = document.getElementById('walkie');
