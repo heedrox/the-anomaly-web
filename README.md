@@ -1,15 +1,19 @@
-# The Anomaly
+# The Anomaly web game/ La Anomalía juego web
 
 Una anomalía en el espacio tiempo se ha abierto en un laboratorio.
 
 Da instrucciones a DRON para investigar lo ocurrido y salvar a la humanidad en menos de 15 minutos.
 
-## ¿Cömo funciona?
-
-Controlas el dron a través de un walkie talkie. Mantén pulsado el botón "PTT" (Push To Talk),
+Controla el dron a través de un walkie talkie. Mantén pulsado el botón "PTT" (Push To Talk),
 mientras hablas. Espera la respuesta de DRON.
 
 ¡Salva el mundo!
+
+## ¿Cómo funciona?
+
+Esto solo es un front cliente para el motor de "La Anomalía", que está en Dialogflow.
+El código de fulfillment de las firebase functions de Dialogflow lo puedes encontrar aquí:
+https://github.com/jmarti-theinit/the-anomaly
 
 ## ¿Por qué este repo?
 
