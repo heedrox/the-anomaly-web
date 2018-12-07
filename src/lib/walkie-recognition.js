@@ -10,7 +10,6 @@ export default class WalkieRecognition {
     this.intermediateCallback = options.intermediateCallback;
     this.sentQuery = '';
     this.recognition.onresult = (event) => {
-      console.log('hay resultados');
       const text = event.results[0][0].transcript;
       this.sentQuery = text;
       this.intermediateCallback(text);
