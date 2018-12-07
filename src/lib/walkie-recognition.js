@@ -8,16 +8,25 @@ export default class WalkieRecognition {
     this.recognition.lang = options.lang;
     this.callback = options.callback;
     this.intermediateCallback = options.intermediateCallback;
+    this.sentQuery = '';
     this.recognition.onresult = (event) => {
+      console.log('hay resultados');
       const text = event.results[0][0].transcript;
+      this.sentQuery = text;
       this.intermediateCallback(text);
       if (event.results[0].isFinal) {
         this.callback(text);
       }
     };
+    this.recognition.onend = () => {
+      if (this.sentQuery === '') {
+         this.intermediateCallback('');
+      }
+    };
   }
 
   start() {
+    this.sentQuery = '';
     this.recognition.start();
   }
 

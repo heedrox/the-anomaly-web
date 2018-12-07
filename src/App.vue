@@ -54,6 +54,8 @@
         this.query = text;
       },
       dronSay(text) {
+        this.showMessage(text);
+        console.log('text', text);
         this.dron.say(text)
           .then((response) => this.dronListen(response));
       },
@@ -66,6 +68,7 @@
         }
       },
       microphoneStart() {
+        this.showMessage('...');
         this.speech.cancel();
         this.recognition.start();
       },
