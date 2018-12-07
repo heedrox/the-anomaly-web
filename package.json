@@ -1,0 +1,39 @@
+{
+  "name": "the-anomaly-web-game",
+  "description": "La Anomalía, vía web. Una anomalía en el espacio tiempo se ha abierto en un laboratorio. Da instrucciones a DRON para investigar lo ocurrido y salvar a la humanidad en menos de 15 minutos.",
+  "version": "1.0.0",
+  "author": "Jordi Marti",
+  "license": "GPLv3",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --host 0.0.0.0",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "api-ai-javascript": "^2.0.0-beta.21",
+    "vue": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-latest": "^6.0.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "cross-env": "^5.1.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-html": "^5.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "file-loader": "^1.1.5",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.6",
+    "uglifyjs-webpack-plugin": "^1.0.1",
+    "vue-loader": "^13.5.0",
+    "vue-template-compiler": "^2.2.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.2.0"
+  }
+}

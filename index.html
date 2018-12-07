@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>La Anomalía - Escape</title>
+        <meta name="description" content="Una anomalía en el espacio tiempo se ha abierto en un laboratorio. Da instrucciones a DRON para investigar lo ocurrido y salvar a la humanidad en menos de 15 minutos.">
+
+        <!-- Mobile Stuff -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="msapplication-tap-highlight" content="no">
+
+        <!-- Google Chrome -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="Dialogflow for Web">
+        <link rel="icon" href="https://console.dialogflow.com/api-client/assets/img/logo-short.png">
+        <meta name="theme-color" content="#FF9800">
+
+        <!-- Safari -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="Dialogflow for Web">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <link rel="apple-touch-icon" href="https://console.dialogflow.com/api-client/assets/img/logo-short.png">
+
+        <!-- OpenGraph -->
+        <meta property="og:title" content="La Anomalía / Juego Escape">
+        <meta property="og:image" content="img/the-anomaly-map.jpg">
+        <meta property="og:description" content="15 minutos para salvar la humanidad. Un juego escape guiado por voz, para Google Assistant y la web.">
+
+        <meta property="og:type" content="website" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:description" content="15 minutos para salvar la humanidad. Un juego escape guiado por voz, para Google Assistant y la web." />
+        <meta name="twitter:title" content="La Anomalía / Juego Escape" />
+        <meta name="twitter:image" content="img/the-anomaly-map.jpg" />
+
+        <!-- Microdata -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Website",
+            "publisher": {
+                "@type": "Person",
+                "name": "Jordi Martí"
+            },
+            "description": "La Anomalía / Juego Escape. 15 minutos para salvar la humanidad. Un juego escape guiado por voz, para Google Assistant y la web."
+        }
+        </script>
+
+    </head>
+    <body>
+        <div id="app"></div>
+        <script src="dist/build.js"></script>
+
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                    // navigator.serviceWorker.register('/worker.js')
+                })
+            }
+        </script>
+
+        <noscript>
+            <h1>:(</h1>
+            <p>Hello, it looks like your JavaScript is disabled, please enable it, since the page can't render without it</p>
+        </noscript>
+    </body>
+</html>
