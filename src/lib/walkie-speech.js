@@ -6,10 +6,10 @@ export default class WalkieSpeech {
   }
 
   speak(text) {
-    var voices = speechSynthesis.getVoices();
-    for (var i = 0; i < voices.length; i++) {
+    /*const voices = speechSynthesis.getVoices();
+    for (let i = 0; i < voices.length; i++) {
       console.log('Voice ' + i.toString() + ' ' + voices[i].name + ' ' + voices[i].voiceURI + ' ' + voices[i].lang);
-    }
+    }*/
     this.clearInterval();
     window.speechSynthesis.cancel();
     const speech = new SpeechSynthesisUtterance();
